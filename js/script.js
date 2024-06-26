@@ -74,7 +74,7 @@ async function getRandomQuestions(type, num){
         },1000)
  
     }else{
-        console.log("please enter a valid number")
+        alert("please enter a valid number between 5 and 25")
     }
 }
 
@@ -83,7 +83,7 @@ function displayQuestions(questions){
     let count;
     for(let x = 0; x < questions.length; x++){
         count = x
-        console.log(questions[x]);
+        // console.log(questions[x]);
         let div = document.createElement("div");
         let h1 = document.createElement("h1");
 
