@@ -34,7 +34,8 @@ let questionArr = []
 let choseCategory;
 let questionsNumTotal;
 let correctAnswerArr = [];
-let userScore = 0
+let userScore = 0;
+let userQuestionAmount
 
 
 async function readJSONFile(url){
@@ -46,12 +47,20 @@ async function readJSONFile(url){
 async function getRandomQuestions(type, num){
     let questionResponse = await readJSONFile("./question.json");
     minutesLeft.textContent = num;
-    secondsLeft.textContent = 10;
+    secondsLeft.textContent = 59;
+    userQuestionAmount = num
     if(num >= 5 && num <= 25){
         if(type !== "all"){
             questionObj = questionResponse[type]
+            // console.log(questionObj)
         }else{
-            questionObj = questionResponse
+            questionObj = {}
+            for(let x in questionResponse){
+                for(let y in questionResponse[x]){
+                    questionObj[y] = questionResponse[x][y];
+                }
+            }
+            // console.log(questionObj)
         }
         for(let x in questionObj){
             if(questionArr.length < num){
@@ -63,7 +72,7 @@ async function getRandomQuestions(type, num){
             secondsLeft.textContent--
             if(secondsLeft.textContent === '0'){
                 minutesLeft.textContent--
-                secondsLeft.textContent = 10
+                secondsLeft.textContent = 59
             }
 
             if(minutesLeft.textContent < 0){
@@ -74,7 +83,8 @@ async function getRandomQuestions(type, num){
         },1000)
  
     }else{
-        alert("please enter a valid number between 5 and 25")
+        alert("please enter a valid number between 5 and 25");
+        window.location.reload();
     }
 }
 
@@ -124,7 +134,7 @@ function displayQuestions(questions){
         button.addEventListener("click", ()=>{
             if(correctAnswerArr.includes(button.textContent)){
                 button.style.background = "lightGreen";
-                userScore += 1;
+                userScore += Number(Number(100 / userQuestionAmount).toFixed());
             }else{
                 button.style.background = "red";
             }
@@ -135,7 +145,7 @@ function displayQuestions(questions){
         button.addEventListener("click", ()=>{
             if(correctAnswerArr.includes(button.textContent)){
                 button.style.background = "lightGreen";
-                userScore += 1;
+                userScore += Number(Number(100 / userQuestionAmount).toFixed());
             }else{
                 button.style.background = "red";
             }
@@ -146,7 +156,7 @@ function displayQuestions(questions){
         button.addEventListener("click", ()=>{
             if(correctAnswerArr.includes(button.textContent)){
                 button.style.background = "lightGreen";
-                userScore += 1;
+                userScore += Number(Number(100 / userQuestionAmount).toFixed());
             }else{
                 button.style.background = "red";
             }
@@ -157,7 +167,7 @@ function displayQuestions(questions){
         button.addEventListener("click", ()=>{
             if(correctAnswerArr.includes(button.textContent)){
                 button.style.background = "lightGreen";
-                userScore += 1;
+                userScore += Number(Number(100 / userQuestionAmount).toFixed());
             }else{
                 button.style.background = "red";
             }
