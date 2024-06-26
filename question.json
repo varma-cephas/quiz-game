@@ -1,0 +1,188 @@
+{
+  "html": {
+    "q1": {
+      "question": "What does HTML stand for?",
+      "choices": {
+        "a": "Hyper Text Markup Language",
+        "b": "Home Tool Markup Language",
+        "c": "Hyperlinks and Text Markup Language",
+        "d": "Hyper Tool Markup Language"
+      },
+      "correctAnswer": "a"
+    },
+    "q2": {
+      "question": "Which HTML tag is used to define an internal style sheet?",
+      "choices": {
+        "a": "<script>",
+        "b": "<style>",
+        "c": "<css>",
+        "d": "<link>"
+      },
+      "correctAnswer": "b"
+    },
+    "q3": {
+    "question": "What are the two main parts of an HTML document?",
+    "choices": {
+        "a": "Header and Body",
+        "b": "Doctype and Content*",
+        "c": "Style and Script",
+        "d": "Meta and Tags"
+    },
+    "correctAnswer": "b"
+    },
+    "q4": {
+    "question": "What is the tag that indicates the start of the document content?",
+    "choices": {
+        "a": "<head>",
+        "b": "<body>*",
+        "c": "<title>",
+        "d": "<html>"
+    },
+    "correctAnswer": "b"
+    },
+    "q5": {
+    "question": "What tag contains meta information about the document?",
+    "choices": {
+        "a": "<body>",
+        "b": "<title>",
+        "c": "<meta>*",
+        "d": "<header>"
+    },
+    "correctAnswer": "c"
+    },
+    "q6": {
+    "question": "What is the difference between an HTML element and an attribute?",
+    "choices": {
+        "a": "Elements define structure, attributes provide details*",
+        "b": "Both are the same thing.",
+        "c": "Elements have content, attributes don't.",
+        "d": "Elements have tags, attributes don't."
+    },
+    "correctAnswer": "a"
+    }
+},
+  "css": {
+    "q1": {
+      "question": "Which property is used to change the background color?",
+      "choices": {
+        "a": "color",
+        "b": "background-color",
+        "c": "bgcolor",
+        "d": "background"
+      },
+      "correctAnswer": "b"
+    },
+    "q2": {
+      "question": "Which CSS property controls the text size?",
+      "choices": {
+        "a": "font-style",
+        "b": "text-size",
+        "c": "font-size",
+        "d": "text-style"
+      },
+      "correctAnswer": "c"
+    },
+    "q3": {
+        "question": "What property in CSS is used to specify the background color of an element?",
+        "choices": {
+          "a": "background",
+          "b": "color",
+          "c": "bgcolor*",
+          "d": "bg-color"
+        },
+        "correctAnswer": "c"
+      },
+      "q4": {
+        "question": "How do you define a CSS rule that applies to all paragraph elements (p)?",
+        "choices": {
+          "a": "<style> p { styles } </style>",
+          "b": "p { styles }",
+          "c": "@p { styles }",
+          "d": "paragraph { styles }*"
+        },
+        "correctAnswer": "d"
+      },
+      "q5": {
+        "question": "What is the difference between inline styles and external stylesheets?",
+        "choices": {
+          "a": "Inline styles are defined within the HTML element, external stylesheets are separate files*",
+          "b": "There is no difference.",
+          "c": "Inline styles are more powerful.",
+          "d": "External stylesheets are required for every page."
+        },
+        "correctAnswer": "a"
+      },
+      "q6": {
+        "question": "What property in CSS is used to specify the width of an element?",
+        "choices": {
+          "a": "width*",
+          "b": "size",
+          "c": "length",
+          "d": "dimension"
+        },
+        "correctAnswer": "a"
+      }
+    },
+  "js": {
+    "q1": {
+      "question": "Which company developed JavaScript?",
+      "choices": {
+        "a": "Mozilla",
+        "b": "Netscape",
+        "c": "Sun Microsystems",
+        "d": "Oracle"
+      },
+      "correctAnswer": "b"
+    },
+    "q2": {
+      "question": "How do you write 'Hello World' in an alert box?",
+      "choices": {
+        "a": "alertBox('Hello World');",
+        "b": "msg('Hello World');",
+        "c": "alert('Hello World');",
+        "d": "msgBox('Hello World');"
+      },
+      "correctAnswer": "c"
+    },
+    "q3": {
+        "question": "What is JavaScript?",
+        "choices": {
+          "a": "A server-side scripting language",
+          "b": "A high-level, interpreted programming language*",
+          "c": "A markup language for web pages",
+          "d": "A styling language for web pages"
+        },
+        "correctAnswer": "b"
+      },
+    "q4": {
+    "question": "How do you declare a variable in JavaScript?",
+    "choices": {
+        "a": "var name = value;",
+        "b": "let name = value*",
+        "c": "const name = value;",
+        "d": "define name = value;"
+    },
+    "correctAnswer": "b"
+    },
+    "q5": {
+    "question": "What is the difference between 'var', 'let', and 'const' keywords for variables?",
+    "choices": {
+        "a": "'var' has global scope, 'let' and 'const' have block scope*",
+        "b": "There is no difference.",
+        "c": "'var' can be reassigned, 'let' and 'const' cannot.",
+        "d": "'var' is for numbers, 'let' is for strings, 'const' is for booleans."
+    },
+    "correctAnswer": "a"
+    },
+    "q6": {
+    "question": "How do you write a simple 'if' statement in JavaScript?",
+    "choices": {
+        "a": "if (condition) { code }",
+        "b": "if condition: { code }",
+        "c": "when condition { code }",
+        "d": "if (code) { condition }"
+    },
+    "correctAnswer": "a"
+    }
+  }
+}

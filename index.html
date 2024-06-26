@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Quiz App</title>
+        <link rel="stylesheet" href="css/main.css">
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <!-- google fonts -->
+    </head>
+    <body>
+        <section class="parent-container">
+            <div class="inner_parent_container">
+                <section class="introduction">
+                    <h1>Quiz App</h1>
+                    <p>Test you basic html css and js knowledge</p>
+                    <p class="menu_button play_now_button">Play now!</p>
+                </section>
+
+                <section class="category_container">
+                    <h2>Choose Category</h2>
+                    <p class="menu_button html_button">html</p>
+                    <p class="menu_button css_button">css</p>
+                    <p class="menu_button js_button">js</p>
+                    <p class="menu_button all_button">all</p>
+                </section>
+
+                <section class="choose_question_container">
+                    <h2>Choose Amount of questions</h2>
+                    <form class="amount_of_questions_container">
+                        <input type="number" class="amount_of_questions">
+                        <input type="submit" value="Start Quiz">
+                    </form>
+                </section>
+
+                <section class="gameContainer">
+                    <h3>Quiz Application</h3>
+                    <div><span class="minutesLeft"></span>:<span class="seconds"></span></div>
+                    <div class="questionContainer">
+                        
+                    </div>
+                    <p class="menu_button submit_button">Submit Quiz</p>
+                </section>
+
+                <section class="userScoreContainer">
+                    <h2>Your Score</h2>
+                    <p class="user_score"></p>
+                    <p class="menu_button restart_button">Restart Quiz</p>
+                </section>
+            </div>
+        </section>
+        <script src="js/script.js"></script>
+    </body>
+</html>
